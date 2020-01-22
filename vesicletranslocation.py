@@ -1,13 +1,9 @@
 
 
-import scipy as sp
-from scipy import special
-import scipy.optimize as sp_optim
+
 import numpy as np
-from scipy.signal import find_peaks, argrelextrema
 import matplotlib.pyplot as plt
 from math import ceil 
-import time, sys
 import warnings
 
 def update_progress(progress):

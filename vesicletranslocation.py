@@ -380,12 +380,19 @@ class vesicleTranslocation:
         energy.append([self.F_ext(alpha), 1+self.beta])       
         return np.array(energy)
 
+#          In order to run the program with the parameters that you want. You can 
+#   change the parameters in the following section
+
+
 if __name__ == '__main__':
     print("running")
-   
+   # You can chnage the paramters inside
+   #the input part of the class: vesicleTranslocation(r0, beta, Fext, kappa_c, lambda_)
+   # 
     vt = vesicleTranslocation(4,0.3,0, kappa_c=2, lambda_=2)
     
-    delta = vt.FreeEnergy(accur=20)
+    delta = vt.FreeEnergy(accur=20) # By choosing a value for accur, you can change the resolution of the 
+                                    # of the computation
     x_val = delta[:, 0]
     y_val = delta[:, 1]
     plt.figure(figsize=(12, 8))

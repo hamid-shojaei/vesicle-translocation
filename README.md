@@ -10,8 +10,8 @@ This process has three different stages :filling, crossing and depletion.
 
 *Vesicletranslocation.py* is a Python program that generates a figure of free energy versus α (α=V_t/V_0, where V_t is the volume of the vesicle that is either inside the pore or that has passed through the pore and V_0 is incompressible vesicle volume). 
 ### Installation
- Please make sure that you have Python 3. Program uses the follwoing library:
-  *numpy, matplotlib and math.*
+ Please make sure that you have Python 3. The program *Vesicletranslocation.py* uses the follwoing library:
+  *numpy, matplotlib and math.* 
  
 In order to use the program, user needs to choose the following parameters: r0,  β, Fext, κ_c and λ
 which are:  the initial radius of vesicle, the ratio of the ratio of the volume of the pore to that of the vesicle, bending modulus and stretching modulus, respectively.
